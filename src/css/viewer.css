@@ -13,25 +13,48 @@
 .viewer-fullscreen-exit,
 .viewer-close {
   &::before {
-    background-image: url('../images/icons.png');
+    background-image: url('../images/newIcons.png');
     background-repeat: no-repeat;
-    background-size: 280px;
+    background-size: 70px;
     color: transparent;
     display: block;
     font-size: 0;
-    height: 20px;
+    height: 24px;
     line-height: 0;
-    width: 20px;
+    width: 24px;
   }
 }
 
+.viewer-one-to-one,
+.viewer-reset,
+.viewer-flip-horizontal,
+.viewer-flip-vertical {
+  display: none !important;
+}
+
+.viewer-prev,
+.viewer-next {
+  background-color: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%) scale(1.4);
+}
+
+.viewer-prev {
+  left: 36px;
+}
+
+.viewer-next {
+  right: 36px;
+}
+
 .viewer-zoom-in::before {
-  background-position: 0 0;
+  background-position: -48px -25px;
   content: 'Zoom In';
 }
 
 .viewer-zoom-out::before {
-  background-position: -20px 0;
+  background-position: -1px -25px;
   content: 'Zoom Out';
 }
 
@@ -46,27 +69,27 @@
 }
 
 .viewer-prev::before {
-  background-position: -80px 0;
+  background-position: -22px 2px;
   content: 'Previous';
 }
 
 .viewer-play::before {
-  background-position: -100px 0;
+  background-position: -49px -1px;
   content: 'Play';
 }
 
 .viewer-next::before {
-  background-position: -120px 0;
+  background-position: 4px -44px;
   content: 'Next';
 }
 
 .viewer-rotate-left::before {
-  background-position: -140px 0;
+  background-position: -1px -1px;
   content: 'Rotate Left';
 }
 
 .viewer-rotate-right::before {
-  background-position: -160px 0;
+  background-position: -25px -24px;
   content: 'Rotate Right';
 }
 
@@ -91,7 +114,9 @@
 }
 
 .viewer-close::before {
-  background-position: -260px 0;
+  background-image: url('../images/icons.png');
+  background-position: -344px 0;
+  background-size: 367px;
   content: 'Close';
 }
 
@@ -158,22 +183,22 @@
 
 .viewer-list {
   box-sizing: content-box;
-  height: 50px;
+  height: 78px;
   margin: 0;
   overflow: hidden;
-  padding: 1px 0;
+  padding: 7px 0;
 
   & > li {
     color: transparent;
     cursor: pointer;
     float: left;
     font-size: 0;
-    height: 50px;
+    height: 78px;
     line-height: 0;
     opacity: 0.5;
     overflow: hidden;
     transition: opacity 0.15s;
-    width: 30px;
+    width: 78px;
 
     &:hover {
       opacity: 0.75;
@@ -221,23 +246,27 @@
 
 .viewer-toolbar {
   & > ul {
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 22px;
+    box-sizing: border-box;
     display: inline-block;
+    height: 44px;
     margin: 0 auto 5px;
     overflow: hidden;
-    padding: 3px 0;
+    padding: 10px;
 
     & > li {
-      background-color: rgba(0, 0, 0, 0.5);
       border-radius: 50%;
       cursor: pointer;
       float: left;
-      height: 24px;
+      height: 32px;
+      margin: 0 10px;
       overflow: hidden;
       transition: background-color 0.15s;
-      width: 24px;
+      width: 32px;
 
       &:hover {
-        background-color: rgba(0, 0, 0, 0.8);
+        /* background-color: rgba(0, 0, 0, 0.8); */
       }
 
       &::before {

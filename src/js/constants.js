@@ -63,13 +63,13 @@ export const REGEXP_SPACES = /\s\s*/;
 export const BUTTONS = [
   'zoom-in',
   'zoom-out',
-  'one-to-one',
-  'reset',
+  // 'one-to-one',
+  // 'reset',
   'prev',
   'play',
   'next',
   'rotate-left',
   'rotate-right',
-  'flip-horizontal',
-  'flip-vertical',
+  // 'flip-horizontal',
+  // 'flip-vertical',
 ];
