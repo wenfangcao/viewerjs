@@ -53,7 +53,7 @@ dist/
 ### Installation
 
 ```shell
-npm install viewerjs
+npm install happyviewerjs
 ```
 
 In browser:
@@ -99,8 +99,8 @@ new Viewer(element[, options])
 ```
 
 ```js
-// import 'viewerjs/dist/viewer.css';
-import Viewer from 'viewerjs';
+import 'happyviewerjs/dist/viewer.css';
+import Viewer from 'happyviewerjs';
 
 // View an image
 const viewer = new Viewer(document.getElementById('image'), {
