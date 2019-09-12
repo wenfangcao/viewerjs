@@ -1,11 +1,11 @@
 /*!
- * Happyviewer.js v1.3.6
+ * Happyviewer.js v0.0.3
  * https://fengyuanchen.github.io/viewerjs
  *
  * Copyright 2015-present Chen Fengyuan
  * Released under the MIT license
  *
- * Date: 2019-09-10T06:40:16.589Z
+ * Date: 2019-09-12T08:16:56.480Z
  */
 
 .viewer-zoom-in::before,
@@ -340,15 +340,20 @@
 }
 
 .viewer-title {
-  color: #ccc;
-  display: inline-block;
-  font-size: 12px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  left: 50%;
   line-height: 1;
-  margin: 0 5% 5px;
   max-width: 90%;
   opacity: 0.8;
   overflow: hidden;
+  position: absolute;
+  text-align: center;
   text-overflow: ellipsis;
+  top: 5%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
   -webkit-transition: opacity 0.15s;
   transition: opacity 0.15s;
   white-space: nowrap;

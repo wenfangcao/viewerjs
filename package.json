@@ -1,7 +1,7 @@
 {
   "name": "happyviewerjs",
   "description": "JavaScript image viewer.",
-  "version": "0.0.2",
+  "version": "0.0.5",
   "main": "dist/viewer.common.js",
   "module": "dist/viewer.esm.js",
   "browser": "dist/viewer.js",

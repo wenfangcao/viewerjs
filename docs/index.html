@@ -295,9 +295,17 @@
   </footer>
 
   <!-- Scripts -->
-  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+  <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.slim.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
-  <script src="js/viewer.js"></script>
-  <script src="js/main.js"></script>
+  <script src="js/happyviewer.js"></script>
+  <!-- <script src="js/main.js"></script> -->
+  <script>
+    document.querySelectorAll('.docs-pictures>li').forEach(ele => {
+      ele.onclick = () => {
+        let viewer = new Happyviewer(ele)
+        viewer && viewer.show()
+      }
+    })
+  </script>
 </body>
 </html>

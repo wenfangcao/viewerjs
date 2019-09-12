@@ -81,7 +81,6 @@ class Viewer {
 
   init() {
     const { element, options } = this;
-
     if (element[NAMESPACE]) {
       return;
     }

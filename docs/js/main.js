@@ -4,6 +4,7 @@ window.onload = function () {
   var Viewer = window.Viewer;
   var console = window.console || { log: function () {} };
   var pictures = document.querySelector('.docs-pictures');
+  
   var toggles = document.querySelector('.docs-toggles');
   var buttons = document.querySelector('.docs-buttons');
   var options = {
@@ -38,7 +39,7 @@ window.onload = function () {
     }
   };
   var viewer = new Viewer(pictures, options);
-
+  viewer.show()
   function toggleButtons(mode) {
     var targets;
     var target;

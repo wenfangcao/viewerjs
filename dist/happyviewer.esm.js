@@ -1,11 +1,11 @@
 /*!
- * Happyviewer.js v1.3.6
+ * Happyviewer.js v0.0.3
  * https://fengyuanchen.github.io/viewerjs
  *
  * Copyright 2015-present Chen Fengyuan
  * Released under the MIT license
  *
- * Date: 2019-09-10T06:42:25.552Z
+ * Date: 2019-09-12T08:16:56.069Z
  */
 
 function _typeof(obj) {
@@ -242,7 +242,7 @@ var DEFAULTS = {
   zoomed: null
 };
 
-var TEMPLATE = '<div class="viewer-container" touch-action="none">' + '<div class="viewer-canvas"></div>' + '<div class="viewer-footer">' + '<div class="viewer-title"></div>' + '<div class="viewer-toolbar"></div>' + '<div class="viewer-navbar">' + '<ul class="viewer-list"></ul>' + '</div>' + '</div>' + '<div class="viewer-tooltip"></div>' + '<div role="button" class="viewer-button" data-viewer-action="mix"></div>' + '<div class="viewer-player"></div>' + '</div>';
+var TEMPLATE = '<div class="viewer-container" touch-action="none">' + '<div class="viewer-title"></div>' + '<div class="viewer-canvas"></div>' + '<div class="viewer-footer">' + '<div class="viewer-toolbar"></div>' + '<div class="viewer-navbar">' + '<ul class="viewer-list"></ul>' + '</div>' + '</div>' + '<div class="viewer-tooltip"></div>' + '<div role="button" class="viewer-button" data-viewer-action="mix"></div>' + '<div class="viewer-player"></div>' + '</div>';
 
 var IS_BROWSER = typeof window !== 'undefined';
 var WINDOW = IS_BROWSER ? window : {};
@@ -1113,7 +1113,7 @@ var render = {
       height: imageData.height,
       // XXX: Not to use translateX/Y to avoid image shaking when zooming
       marginLeft: imageData.left,
-      marginTop: imageData.top
+      marginTop: imageData.top + 40
     }, getTransforms(imageData)));
 
     if (done) {
@@ -2771,7 +2771,7 @@ function () {
           options = this.options;
 
       if (element[NAMESPACE]) {
-        return;
+        return element[NAMESPACE];
       }
 
       element[NAMESPACE] = this;
@@ -3043,3 +3043,4 @@ function () {
 assign(Viewer.prototype, render, events, handlers, methods, others);
 
 export default Viewer;
+//# sourceMappingURL=happyviewer.esm.js.map
